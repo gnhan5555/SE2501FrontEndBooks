@@ -1,0 +1,112 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/*CSS header*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu {
+    background:linear-gradient(white,blue);
+    padding: 0; margin: 0;
+    list-style-type: none;
+}
+
+.menu > li:last-child{
+    border-right: none;
+}
+.menu >li > a {
+    display:block;
+    padding:1rem;
+    text-decoration: none;
+    color:white;
+}
+.menu>li{
+    border-right: 1px solid darkblue;
+}
+
+.subject {
+ text-transform: uppercase;
+ font-size: 2.5rem;
+ text-align: center;
+ color: darkblue;
+ text-shadow: 2px 3px 2px skyblue;   
+}
+
+.menu >li> a:hover{
+    background-color: darkblue;
+}
+
+.submenu{
+    display:none;
+    position: absolute;
+    z-index: 9999;
+}
+
+.sub:hover .submenu{
+    display:block;
+}
+
+.submenu::after{
+    content: " ";
+    border-width: 15px;
+    border-color: transparent transparent white transparent;
+    border-style: solid;
+    position: absolute;
+    bottom: 100%;
+    left:48%;
+}
+/*css body*/
+
+.book {
+    width: 20%;
+    
+}
+.book > div{
+    position: relative;
+    border: 1px solid blue;
+    padding: 10px; margin:5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.book img{
+    width: 100%;
+    transition: transform 0.7s;
+}
+
+.book img:hover{
+    transform: scale(1.1);
+    
+}
+
+.close {
+    position: absolute;
+    top:1.5rem;right:1.2rem;
+    text-decoration: none;
+    color: blue;
+}
+
+/*css footer*/
+
+footer{
+    background: linear-gradient(blue,white,cyan);
+    padding: 2rem;
+    overflow: hidden;
+}
+
+footer>span{
+    animation: move 10s infinite;
+    position:relative;
+}
+
+@keyframes move {
+    from{
+        left:0;
+    }
+    to{
+        left:100%;
+    }
+}
