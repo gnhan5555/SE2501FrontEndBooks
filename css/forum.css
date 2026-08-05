@@ -1,0 +1,122 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --main-padding:1rem;
+}
+
+/* CSS HEADER */
+
+.flex{
+    display:flex;
+    /* có 2 cách để đẩy bell và user qua bên phải */
+    /* cách 1 */
+    justify-content: space-between;
+    /*  */
+
+}
+
+ /* cách 2 */
+/* ul.menu.flex{
+    margin-left:auto;
+} */
+
+.v-center{
+    align-items: center;
+}
+nav{
+    background:linear-gradient(to right bottom,blue,white, skyblue);
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.menu>li>a{
+    display:block;
+    padding:var(--main-padding);
+    color:darkblue;
+    text-decoration: none;
+}
+
+.banner{
+    background:linear-gradient(to right bottom,skyblue,white,blue );
+    padding: var(--main-padding);
+    margin-top: 3px;
+}
+
+.banner img{
+    max-width: 100%;
+}
+
+
+.banner>h1{
+    font-size: 2.5rem;
+    color: blue;
+    text-shadow: 2px 3px 3px white ;
+}
+/* CSS BODY */
+.topic{
+    width:80%;
+    margin:0 auto;
+}
+
+.topic>h2{
+    background-color: darkblue;
+    color:white;
+    padding:var(--main-padding);
+    margin-bottom: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.topic>.forums{
+    background-color: lightblue;
+    border-radius: 0 0 1rem 1rem;
+}
+.forum img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    padding:var(--main-padding);
+}
+.forum{
+    padding: var(--main-padding);
+    border-bottom: 1px solid darkblue;
+}
+.forum:last-child{
+    border-bottom: none;
+}
+
+/* css ADS */
+.ads{
+    margin-top: var(--main-padding);
+}
+
+.ads>div{
+    background: linear-gradient(skyblue,blue);
+    width:9%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    padding: 8rem 0;
+    border-radius: 10px;
+    position: fixed;
+}
+.ads>.left{
+    left:0.5%;
+}
+.ads>.right{
+    right:0.5%;
+}
+
+/* css FOOTER */
+footer {
+    background: linear-gradient(skyblue,blue);
+    color:white;
+    text-align: center;
+    padding:2rem;
+    margin-top: 5px;
+}

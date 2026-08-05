@@ -1,0 +1,15 @@
+body{
+    background-color: lightcyan;
+}
+
+aside.ads{
+    display:none;
+}
+
+.topic {
+    width: 100%;
+}
+
+.flex{
+    flex-direction: column;
+}
