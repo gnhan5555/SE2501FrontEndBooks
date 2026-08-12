@@ -1,0 +1,94 @@
+:root{
+    --my-padding:1rem;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.col20{
+    width: 20%;
+    padding:var(--my-padding);
+}
+.col80{
+    width: 80%;
+    padding:var(--my-padding);
+}
+.col20 img{
+    max-width: 100%;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.rating{
+    list-style-type: none;
+    padding: 0;
+}
+.rating>li>a{
+    text-decoration: none;
+}
+
+.selected-rate{
+    color: gold;
+}
+
+.review-form textarea{
+    width: 100%;
+    height: 3.5rem;
+    padding:5px;
+}
+
+.add-comment{
+    background-color: lightskyblue;
+    color:white;
+    border:1px solid grey;
+    padding:10px;
+}
+.button{
+    text-align: right;
+}
+
+.subtitle::after{
+    content: "";
+    border-width: 2px;
+    border-color: lightskyblue;
+    border-style: solid;
+    display:block;
+    margin-top:8px;
+}
+
+/* COMMENT */
+
+.col10{
+    width: 10%;
+}
+.col90{
+    width: 90%;
+    padding: var(--my-padding);
+}
+
+.col10 img{
+    width: 100%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.comment-list{
+    padding: 0;
+    list-style-type: none;
+}
+
+.comment{
+    border:1px solid gray;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: lightgrey;
+    padding: 5px;
+}
+.comment p{
+    font-style: italic;
+}

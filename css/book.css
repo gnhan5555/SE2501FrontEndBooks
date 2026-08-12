@@ -40,6 +40,13 @@
     background-color: darkblue;
 }
 
+
+.menu>li:last-child{
+    margin-left: auto;
+    padding: 5px;
+}
+
+
 .submenu{
     display:none;
     position: absolute;
@@ -109,4 +116,21 @@ footer>span{
     to{
         left:100%;
     }
+}
+
+/* CSS BUTTON */
+.button{
+    padding:10px;
+    border:1px solid;
+    border-radius: 5px;
+}
+
+.btn-success{
+    background-color: lightgreen;
+    border-color: green;
+}
+
+.btn-info{
+    background-color: skyblue;
+    border-color: blue;
 }
