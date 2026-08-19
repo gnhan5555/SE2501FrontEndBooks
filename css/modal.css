@@ -1,0 +1,69 @@
+.modal{
+    background-color: rgba(0, 0, 255, 0.4);
+    position: fixed;
+    /* co 2 cach resize moi man hinh full */
+    /* cach 1 */
+    width: 100vw;
+    height: 100vh;
+    /*  */
+    top:0;
+/*     cach 2:
+    left:0;
+    right: 0; */
+
+    top:0;
+    bottom:0;
+    /* display: none; -- rui ro anh huong cau truc, sd visibility*/
+    /* visibility: hidden;
+    opacity: 0;              --- lap cau truc nhieu trong js, tao class rieng*/
+    transition: opacity .5s,visibility .5s;
+}
+
+.modal-show {
+    visibility: visible;
+    opacity: 1;
+}
+.modal-hide{
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.modal-content{
+    background-color: white;
+    width: 30%;
+    border-radius: 10px;
+    padding: 1rem;
+    position: relative;
+}
+
+.control{
+    margin: 8px;
+}
+
+.input-control{
+    width: 100%;
+    height: 2.5rem;
+    padding: 5px;
+}
+
+.modal-close{
+    position: absolute;
+    right: 1rem;
+    top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.control{
+    margin: 8px;
+}
+
+.btn-control{
+    text-align: right;
+}
+
+.error{
+    border: 1px solid red;
+}

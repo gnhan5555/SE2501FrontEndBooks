@@ -8,6 +8,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" rel="stylesheet">
     <link href="css/book.css" rel="stylesheet"/>
     <link href="css/details.css"rel="stylesheet"/>
+
+    <script src="js/details.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -37,7 +42,18 @@
 
     <section class="container flex">
         <div class="col20">
-            <img src="images/1.jpg" alt="Book"/>
+            <img src="images/1.jpg" alt="Book" id="main-img"/>
+
+            <div class="thumbs flex">
+                <div><img src="images/1.jpg" alt="Book"/></div>
+                <div><img src="images/t01.png" alt="Book"/></div>
+                <div><img src="images/t02.png" alt="Book"/></div>
+                <div><img src="images/t03.png" alt="Book"/></div>
+                <div><img src="images/t04.png" alt="Book"/></div>
+              
+            </div>
+
+
         </div>
             
         <div class="col80">
@@ -109,9 +125,10 @@
 
     <section class="review container">
         <div class="review-form">
-            <textarea placeholder="Nội dung bình luận..."></textarea>
-            <div class="button">
-                <button class="add-comment"><i class="fa-regular fa-paper-plane"></i> Thêm bình luận</button>
+            <textarea placeholder="Nội dung bình luận..." id="comment-content"></textarea>
+            <div class=""> 
+                <!-- can sua box ben phai thay ben trai -->
+                <button onclick="addComment()" class="add-comment button"><i class="fa-regular fa-paper-plane"></i> Thêm bình luận</button>
             </div>
         </div>
     </section>

@@ -46,6 +46,7 @@ table{
     color:white;
     border:1px solid grey;
     padding:10px;
+    
 }
 .button{
     text-align: right;
@@ -91,4 +92,20 @@ table{
 }
 .comment p{
     font-style: italic;
+}
+
+
+/* CSS THUMB */
+.thumbs>div{
+    width: 20%;
+    padding: 5px;
+}
+
+.thumbs img{
+    width: 100%;
+}
+
+.thumbs img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
