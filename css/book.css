@@ -139,3 +139,41 @@ footer>span{
     background-color: skyblue;
     border-color: blue;
 }
+
+input[type=search]{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    
+}
+
+
+
+
+
+/* loading tu lam */
+
+
+.glass-loader{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    border:4px solid transparent;
+    
+    background:
+    linear-gradient(white) padding-box,
+    linear-gradient(45deg,#38bdf8,#a855f7) border-box;
+    
+    backdrop-filter:blur(8px);
+    
+    animation:spin 1.2s linear infinite;
+    }
+
+    @keyframes spin{
+        from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }

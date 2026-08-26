@@ -31,3 +31,32 @@ for (let im of images)
 
         }
     }
+
+
+    let loadComments = async ()=>{
+        let res = await fetch('https://6a8e39bbbaf2ac84246da4ba.mockapi.io/comments')
+        let data = await res.json();
+
+        let c = document.querySelector('.comment-list')
+
+        let html ='';
+        for(let com of data){
+            html +=`
+            <li class="comment flex">
+                <div class="col10">
+                    <img src="${com.user}" alt="vinfat"/>
+                </div>
+                <div class="col90">
+                    <h4>${com.content}</h4>
+                    <p>${moment(com.created_date).locale('vi').fromNow()}</p>
+                </div>
+            </li>
+            `;
+        }
+        c.innerHTML=html;
+    }
+
+    window.onload =()=>{ 
+
+        loadComments();
+    }
