@@ -6,9 +6,23 @@ for (let im of images)
 
     });
 
-    function addComment(){
+    async function addComment(){
         if (confirm("Bạn chắc chắn thêm bình luận?")===true){
             let c = document.getElementById('comment-content');
+
+            let res= await fetch('https://6a8e39bbbaf2ac84246da4ba.mockapi.io/comments', {
+                method:'post',
+                body:JSON.stringify{
+                    'content': c.value,
+                    'created_date':new Date().getTime().locale('vi').fromNow(),
+                    'user':'images/avatar.webp'
+                },
+                headers:{
+                    'content-type': 'application/json'
+                }
+            });
+
+
 
             let h=`
             <li class="comment flex">
