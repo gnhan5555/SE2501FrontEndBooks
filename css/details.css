@@ -48,9 +48,14 @@ table{
     padding:10px;
     
 }
-.button{
+
+.review-form > div {
     text-align: right;
 }
+
+/* .button{
+    text-align: right; bỏ
+} */
 
 .subtitle::after{
     content: "";
